@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+    <style>
+    
+    fieldset {
+              width : 500px;
+              height : 450px;
+              background : #ff8789;
+              border-style : groove;
+              border-color : #de4c4c;
+          }
+          
+          legend {
+              color : #4c4cde;
+          }
+          
+          .signupInput {
+              
+              width: 100%;
+              margin: 8px 0;
+              padding: 12px 20px; 
+              box-sizing: border-box;
+              transition: width 0.4s ease-in-out;
+          }
+          
+          .signupInput:focus { 
+              border: 3px solid #555;
+          }
+          
+          .button {
+              background : #d48c43;
+              width : 100px;
+              border : none;
+              height : 30px;
+              cursor: pointer;
+              transition-duration: 0.4s;
+          }
+          
+          .button:hover {
+              background-color: #4CAF50; /* Green */
+              color: white;
+            }
+            
+            #loginReferrence a{
+            text-decoration : none;
+            }
+          
+          #loginReferrence {
+              color : #030201;
+              
+              width : 200px;
+              height : 100px
+              box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+          }
+          
+          #loginReferrence:hover {
+              box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+          }
+    
+    </style>
+
+ 
+
+
+</head>
+<body>
+
+ 
+
+<fieldset>
+    <legend><h3>Signup</h3></legend>
+    <form action="SignupServlet" method="post">
+        <table>
+            <tr>
+                <td><label>First Name </label>
+                <td><input type="text" name="firstname" class = "signupInput"><br>
+            
+            </tr>
+            
+            <tr>
+                <td><label>Last Name </label>
+                <td><input type="text" name="lastname" class = "signupInput"><br>
+            
+            </tr>
+            
+            <tr>
+                <td><label>Email </label>
+                <td><input type="text" name="email" class = "signupInput"><br>
+            
+            </tr>
+            
+            <tr>
+                <td><label>Password </label>
+                <td><input type="password" name="password" class = "signupInput"><br>
+            
+            </tr>
+            
+            <tr>
+                <td><input type="submit" value="Register" class = "button">
+            
+            </tr>
+        </table>
+        
+    </form>
+    <button id = "loginReferrence"><a href="index.html">Already have an account</a></button>
+    
+</fieldset>
+
+</body>
+</html>
